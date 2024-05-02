@@ -1,0 +1,24 @@
+﻿<Page x:Class="calendar2.KushatPage"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:calendar2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="600" 
+      Title="AlcoPage" Background="White" >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Введите то, что вы ели сегодня"  FontSize="20" VerticalAlignment="Center" Margin="5" Grid.Row="1" RenderTransformOrigin="0.505,0.592"/>
+        <ListBox x:Name="EdaList" Grid.Row="2" Margin="5"/>
+        <Button Background="LightGreen" Grid.Row="3" Margin="5" Content="Сохранить  и  выйти" Foreground="DarkGreen" FontSize="20" />
+        <Frame x:Name="frame" Grid.RowSpan="4"/>
+    </Grid>
+</Page>
